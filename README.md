@@ -58,6 +58,3 @@ La segmentación RFM es crucial para optimizar el retorno de la inversión (ROI)
 *Desarrollado por: [Nicolas Zalazar]*
 *GitHub: [@Nicolenki7](https://github.com/Nicolenki7)*
 
-4.  Confirma la creación del nuevo archivo (Commit new file).
-
-Este proceso garantiza que no haya caracteres ocultos o errores de espaciado, y el formato de la tabla debería verse correctamente en la vista principal del repositorio. ¡Tu proyecto estará impecable!
