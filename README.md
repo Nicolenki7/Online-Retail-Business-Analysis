@@ -1,60 +1,45 @@
-# 🛍️ Online Retail Business Analysis: Segmentación de Clientes (RFM)
+# 🛍️ Análisis de Segmentación de Clientes RFM - Retail Online
 
-## 💡 Resumen Ejecutivo
+## 🎯 Objetivo del Proyecto
 
-Este proyecto aplica una metodología de análisis de datos para segmentar la base de clientes de un minorista en línea. El objetivo es transformar datos transaccionales brutos en **inteligencia de negocio accionable** utilizando el modelo **RFM** (Recencia, Frecuencia, Valor Monetario), identificando los segmentos más valiosos y aquellos en riesgo de abandono.
+Este proyecto aplica el modelo **RFM (Recency, Frequency, Monetary)** para segmentar la base de clientes de un minorista en línea y definir estrategias de marketing específicas para maximizar el valor de vida del cliente (CLV) y la retención.
 
-El flujo de trabajo demuestra habilidades en la **integración de Python (Pandas)** y **SQL (SQLite)** para la limpieza de datos y el *Feature Engineering*.
+## 💡 Metodología (RFM)
 
-***
+El análisis RFM asigna una puntuación a cada cliente basada en tres métricas clave:
 
-## ⚙️ Metodología Técnica (QA/QC)
+* **R (Recencia):** Hace cuánto tiempo el cliente hizo su última compra. (*Puntuación alta = Compró recientemente*).
+* **F (Frecuencia):** Con qué frecuencia el cliente realiza compras. (*Puntuación alta = Compra a menudo*).
+* **M (Valor Monetario):** Cuánto dinero ha gastado el cliente. (*Puntuación alta = Alto gasto*).
 
-### 1. Limpieza de Datos y Preprocesamiento (Python/Pandas)
-* **Limpieza de Datos:** Manejo de nulos, y filtrado de errores transaccionales (Quantity $\le 0$, UnitPrice $\le 0$).
-* **Feature Engineering Inicial:** Creación de la métrica de ingresos **`Sales_Total`** (`Quantity * UnitPrice`).
+Utilizando Python (Pandas) y la distribución de cuartiles, se creó una puntuación RFM combinada para clasificar a los clientes en segmentos accionables.
 
-### 2. Cálculo de Métricas RFM (Python + SQL/SQLite)
-* **Integración de Herramientas:** Se usó Python para calcular la **Recencia (R)** (gestión de fechas) y SQL (SQLite) para calcular la **Frecuencia (F)** y el **Valor Monetario (M)** a través de consultas de agregación.
+## 📊 Hallazgos Clave y Conclusiones Ejecutivas
 
-### 3. Segmentación y Scoring (Python/Pandas)
-* **Scoring:** Asignación de puntuaciones de 1 a 4 a R, F y M mediante **Cuartiles** (`pd.cut` con límites robustos).
-* **Categorización:** Generación de la columna final **`Segment`** (ej. 'Campeones', 'Clientes en Riesgo') basada en reglas de negocio estándar.
+El análisis reveló una fuerte dependencia del ingreso en una gran fracción de la base de clientes (47.55%) que genera la inmensa mayoría de los ingresos, lo cual es crucial para la asignación de recursos (Ley de Pareto).
 
-***
+| Hallazgo | Base de Clientes (Gráfico Circular) | Ingresos Totales (Gráfico de Barras) |
+| :--- | :--- | :--- |
+| **Foco Estratégico (Leales + Potencial Leal)** | **47.55%** | **78.91%** |
+| **Clientes Leales (Individual)** | 24.20% | 71.80% |
 
-## 🎯 Hallazgos Clave y Estrategia de Negocio
+### 🔑 Conclusiones
 
-La segmentación RFM es crucial para optimizar el retorno de la inversión (ROI) en marketing. La siguiente tabla resume la estrategia de negocio para los segmentos críticos.
+* **Sólido Rendimiento del Valor:** El **47.55%** de la base de clientes (principalmente los segmentos 'Leales' y 'Potencial Leal') es responsable de generar un impresionante **78.91%** de los ingresos.
+* **Prioridad Absoluta:** El segmento **'Clientes Leales'** es el motor del negocio, aportando casi las tres cuartas partes (71.80%) de los ingresos. La estrategia de retención y recompensa (ej. Programas VIP) debe ser su prioridad.
+* **Oportunidad de Reactivación:** El gran tamaño del segmento **'Durmiendo'** (23.4%) indica una gran cantidad de clientes con alto riesgo de abandono que requieren una campaña de *win-back* urgente y segmentada.
 
-| Segmento | Descripción Clave | Proporción de Clientes | Ingresos Aportados | Acción Estratégica Recomendada |
-| :--- | :--- | :--- | :--- | :--- |
-| **Campeones** | Los más recientes, frecuentes y que más gastan. (R:4, F:4, M:4) | [X]% | [Y]% | **Retención:** Programa de Lealtad VIP y ofertas exclusivas para maximizar CLV. |
-| **Clientes en Riesgo** | Alto valor histórico, pero baja Recencia. (R:1-2, F:3-5, M:3-5) | [X]% | [Y]% | **Reactivación:** Campaña de *Win-back* con ofertas de alto valor y encuestas de satisfacción. |
-| **Potencial Leal** | Reciente actividad, pero baja frecuencia/gasto. (R:3-4, F:1-3, M:1-3) | [X]% | [Y]% | **Crecimiento:** Incentivar la próxima compra con descuentos por volumen. |
+## 📋 Estrategia de Intervención por Segmento
 
-*(**Nota:** Reemplace los valores [X]% y [Y]% con los resultados de su análisis.)*
+| Segmento | % de Ingresos | Estrategia de Intervención Recomendada |
+| :--- | :--- | :--- |
+| **Clientes Leales** | 71.80% | **Programa VIP y Exclusivo.** Recompensa por lealtad para maximizar la retención y el *upselling*. |
+| **Potencial Leal** | 7.11% | **Incentivo de Frecuencia.** Campañas de segunda/tercera compra con descuentos por volumen. |
+| **Clientes en Riesgo** | 11.27% | **Campaña *Win-Back* Inmediata.** Descuentos de reactivación y ofertas personalizadas. |
+| **Durmiendo** | 0.8% (Aprox.) | **Email Masivo de Última Oportunidad.** Baja prioridad, enfocar recursos en segmentos más rentables. |
 
-***
+## 🔗 Dashboard Interactivo (Looker Studio)
 
-## 📁 Estructura del Repositorio
+El informe completo, interactivo y con la segmentación RFM por colores, está disponible en el siguiente enlace:
 
-| Archivo | Descripción |
-| :--- | :--- |
-| `Online_Retail_RFM_Analysis.ipynb` | **Notebook principal de Google Colab** con todo el código del proyecto. |
-| `rfm_segmentation_final.csv` | **Dataset Final** listo para BI. Contiene el `CustomerID`, las puntuaciones RFM y la columna categórica **`Segment`**. |
-
-***
-
-## 🛠️ Herramientas Utilizadas
-
-* **Python:** Pandas, NumPy.
-* **SQL:** SQLite (Integración).
-* **Visualización:** Looker Studio.
-
-### 🔗 **[]**
-
----
-*Desarrollado por: [Nicolas Zalazar]*
-*GitHub: [@Nicolenki7](https://github.com/Nicolenki7)*
-
+[**Acceder al Dashboard de Segmentación RFM**](https://lookerstudio.google.com/s/l3I-jf7mSGs)
