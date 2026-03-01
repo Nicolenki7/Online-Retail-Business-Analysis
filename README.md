@@ -1,45 +1,98 @@
-# 🛍️ Análisis de Segmentación de Clientes RFM - Retail Online
+# 🛍️ Online Retail Business Analysis
 
-## 🎯 Objetivo del Proyecto
+**Customer Segmentation | RFM Analysis (Recency, Frequency, Monetary) | Python**
 
-Este proyecto aplica el modelo **RFM (Recency, Frequency, Monetary)** para segmentar la base de clientes de un minorista en línea y definir estrategias de marketing específicas para maximizar el valor de vida del cliente (CLV) y la retención.
+[![Python](https://img.shields.io/badge/Python-3776AB?logo=python)](https://www.python.org/)
+[![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)](https://pandas.pydata.org/)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-## 💡 Metodología (RFM)
+---
 
-El análisis RFM asigna una puntuación a cada cliente basada en tres métricas clave:
+## 📋 Overview
 
-* **R (Recencia):** Hace cuánto tiempo el cliente hizo su última compra. (*Puntuación alta = Compró recientemente*).
-* **F (Frecuencia):** Con qué frecuencia el cliente realiza compras. (*Puntuación alta = Compra a menudo*).
-* **M (Valor Monetario):** Cuánto dinero ha gastado el cliente. (*Puntuación alta = Alto gasto*).
+Customer value segmentation using **RFM methodology** (Recency, Frequency, Monetary) for retail business optimization. Enables targeted marketing strategies based on customer value tiers.
 
-Utilizando Python (Pandas) y la distribución de cuartiles, se creó una puntuación RFM combinada para clasificar a los clientes en segmentos accionables.
+---
 
-## 📊 Hallazgos Clave y Conclusiones Ejecutivas
+## 💼 Business Impact
 
-El análisis reveló una fuerte dependencia del ingreso en una gran fracción de la base de clientes (47.55%) que genera la inmensa mayoría de los ingresos, lo cual es crucial para la asignación de recursos (Ley de Pareto).
+- **Targeted Marketing**: Segment-specific campaigns
+- **Customer Retention**: Identify high-value at-risk customers
+- **Revenue Optimization**: Focus on highest-value segments
+- **Resource Allocation**: Efficient marketing spend
 
-| Hallazgo | Base de Clientes (Gráfico Circular) | Ingresos Totales (Gráfico de Barras) |
-| :--- | :--- | :--- |
-| **Foco Estratégico (Leales + Potencial Leal)** | **47.55%** | **78.91%** |
-| **Clientes Leales (Individual)** | 24.20% | 71.80% |
+---
 
-### 🔑 Conclusiones
+## 🛠️ Technical Stack
 
-* **Sólido Rendimiento del Valor:** El **47.55%** de la base de clientes (principalmente los segmentos 'Leales' y 'Potencial Leal') es responsable de generar un impresionante **78.91%** de los ingresos.
-* **Prioridad Absoluta:** El segmento **'Clientes Leales'** es el motor del negocio, aportando casi las tres cuartas partes (71.80%) de los ingresos. La estrategia de retención y recompensa (ej. Programas VIP) debe ser su prioridad.
-* **Oportunidad de Reactivación:** El gran tamaño del segmento **'Durmiendo'** (23.4%) indica una gran cantidad de clientes con alto riesgo de abandono que requieren una campaña de *win-back* urgente y segmentada.
+| Category | Technologies |
+| :--- | :--- |
+| **Language** | Python |
+| **Data Processing** | Pandas, NumPy |
+| **Analysis** | RFM scoring, clustering |
+| **Visualization** | Matplotlib, Seaborn |
 
-## 📋 Estrategia de Intervención por Segmento
+---
 
-| Segmento | % de Ingresos | Estrategia de Intervención Recomendada |
-| :--- | :--- | :--- |
-| **Clientes Leales** | 71.80% | **Programa VIP y Exclusivo.** Recompensa por lealtad para maximizar la retención y el *upselling*. |
-| **Potencial Leal** | 7.11% | **Incentivo de Frecuencia.** Campañas de segunda/tercera compra con descuentos por volumen. |
-| **Clientes en Riesgo** | 11.27% | **Campaña *Win-Back* Inmediata.** Descuentos de reactivación y ofertas personalizadas. |
-| **Durmiendo** | 0.8% (Aprox.) | **Email Masivo de Última Oportunidad.** Baja prioridad, enfocar recursos en segmentos más rentables. |
+## 🚀 Key Features
 
-## 🔗 Dashboard Interactivo (Looker Studio)
+### RFM Scoring
+- **Recency**: Days since last purchase
+- **Frequency**: Total number of purchases
+- **Monetary**: Total spend amount
 
-El informe completo, interactivo y con la segmentación RFM por colores, está disponible en el siguiente enlace:
+### Customer Segmentation
+- Value-based clustering (Champions, Loyal, At-Risk, Lost)
+- Segment size and revenue contribution analysis
 
-[**Acceder al Dashboard de Segmentación RFM**](https://lookerstudio.google.com/s/l3I-jf7mSGs)
+### Actionable Insights
+- Segment-specific marketing recommendations
+- Retention strategies for high-value customers
+
+---
+
+## 🔧 Setup & Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/Nicolenki7/Online-Retail-Business-Analysis.git
+cd Online-Retail-Business-Analysis
+
+# Install dependencies
+pip install -r requirements.txt
+
+# Run analysis
+jupyter notebook rfm_analysis.ipynb
+```
+
+---
+
+## 🔗 Links
+
+| Resource | URL |
+| :--- | :--- |
+| **Repository** | https://github.com/Nicolenki7/Online-Retail-Business-Analysis |
+
+---
+
+## 📝 Resumen en Español
+
+Segmentación de clientes usando metodología **RFM** (Recencia, Frecuencia, Valor Monetario) para optimización de negocio retail. Permite estrategias de marketing segmentadas basadas en tiers de valor de cliente.
+
+---
+
+## 📄 License
+
+MIT License
+
+---
+
+## 👤 Author
+
+**Nicolás Zalazar** | Senior Data Engineer
+
+- GitHub: [@Nicolenki7](https://github.com/Nicolenki7)
+
+---
+
+*Last Updated: March 2026*
