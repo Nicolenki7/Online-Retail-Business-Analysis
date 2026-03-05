@@ -2,6 +2,8 @@
 
 **Customer Segmentation | RFM Analysis (Recency, Frequency, Monetary) | Python**
 
+*Looker Dashboard* https://lookerstudio.google.com/reporting/a992755d-e22b-4272-8d4a-ddafc2e3679b/page/2nqcF
+
 [![Python](https://img.shields.io/badge/Python-3776AB?logo=python)](https://www.python.org/)
 [![Pandas](https://img.shields.io/badge/Pandas-150458?logo=pandas)](https://pandas.pydata.org/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
