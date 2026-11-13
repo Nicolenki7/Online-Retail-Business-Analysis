@@ -1,0 +1,21 @@
+<svg xmlns='http://www.w3.org/2000/svg' width='660' height='300' viewBox='0 0 660 300' role='img' aria-label='El 10 % de los clientes paga el 61 % de la factura'>
+<rect width='660' height='300' fill='#ffffff'/>
+<text x='12' y='24' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='15' font-weight='600' fill='#1f2328'>El 10 % de los clientes paga el 61 % de la factura</text>
+<text x='12' y='42' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' fill='#8d8d8d'>% acumulado de la facturación que aporta cada grupo de clientes</text>
+<line x1='12' y1='254.0' x2='648' y2='254.0' stroke='#d0d7de' stroke-width='1'/>
+<rect x='40.0' y='184.9' width='71.2' height='69.1' rx='3' fill='#da1e28'/>
+<text x='75.6' y='177.9' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' font-weight='600' text-anchor='middle' fill='#1f2328'>31.8%</text>
+<text x='75.6' y='272.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='11.5' text-anchor='middle' fill='#57606a'>top 1%</text>
+<rect x='167.2' y='144.7' width='71.2' height='109.3' rx='3' fill='#0f62fe'/>
+<text x='202.8' y='137.7' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' font-weight='600' text-anchor='middle' fill='#1f2328'>50.4%</text>
+<text x='202.8' y='272.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='11.5' text-anchor='middle' fill='#57606a'>top 5%</text>
+<rect x='294.4' y='120.8' width='71.2' height='133.2' rx='3' fill='#da1e28'/>
+<text x='330.0' y='113.8' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' font-weight='600' text-anchor='middle' fill='#1f2328'>61.4%</text>
+<text x='330.0' y='272.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='11.5' text-anchor='middle' fill='#57606a'>top 10%</text>
+<rect x='421.6' y='92.0' width='71.2' height='162.0' rx='3' fill='#0f62fe'/>
+<text x='457.2' y='85.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' font-weight='600' text-anchor='middle' fill='#1f2328'>74.7%</text>
+<text x='457.2' y='272.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='11.5' text-anchor='middle' fill='#57606a'>top 20%</text>
+<rect x='548.8' y='54.0' width='71.2' height='200.0' rx='3' fill='#0f62fe'/>
+<text x='584.4' y='47.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='12' font-weight='600' text-anchor='middle' fill='#1f2328'>92.2%</text>
+<text x='584.4' y='272.0' font-family='-apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif' font-size='11.5' text-anchor='middle' fill='#57606a'>top 50%</text>
+</svg>
