@@ -8,6 +8,12 @@
 
 ---
 
+## 📊 Interactive report
+
+**[Open the interactive report →](https://nicolenki7.github.io/Online-Retail-Business-Analysis/report.html)** — filters, charts and the table behind them, rebuilt from the committed CSVs.
+
+---
+
 ## The business question
 
 An online retailer has **4,338 customers** and **8.89 million** in cumulative revenue. Treating them all the same costs money: the customer who buys once a year does not deserve the same effort as the one holding up the P&L. The question is **who pays the bill, who is drifting away, and how much money is at stake**.
