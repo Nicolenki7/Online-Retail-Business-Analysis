@@ -26,15 +26,7 @@ jobs:
           from nbformat.v4 import new_markdown_cell
 
           RUTA = 'Online_Retail_Analysis.ipynb'
-          TEXTO = '''[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolenki7/Online-Retail-Business-Analysis/blob/main/Online_Retail_Analysis.ipynb)
-
-> **En 30 segundos:** el 24 % de los clientes aporta el 72 % del ingreso, y 117 clientes valiosos llevan 90 días sin comprar.
->
-> - 4.338 clientes segmentados por RFM
-> - Clientes Leales: 1.050 (24,2 % de la base) generan el 71,8 % del gasto
-> - «No se pueden perder»: 117 clientes, 395.254 de gasto histórico, 90 días de recencia media
->
-> Los resultados ya están ejecutados: no hace falta correr nada para leerlos.'''
+          TEXTO = '[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/Nicolenki7/Online-Retail-Business-Analysis/blob/main/Online_Retail_Analysis.ipynb)\n\n> **En 30 segundos:** el 24 % de los clientes aporta el 72 % del ingreso, y 117 clientes valiosos llevan 90 días sin comprar.\n>\n> - 4.338 clientes segmentados por RFM\n> - Clientes Leales: 1.050 (24,2 % de la base) generan el 71,8 % del gasto\n> - «No se pueden perder»: 117 clientes, 395.254 de gasto histórico, 90 días de recencia media\n>\n> Los resultados ya están ejecutados: no hace falta correr nada para leerlos.'
 
           nb = nbformat.read(RUTA, as_version=4)
           primero = ''.join(nb.cells[0].source) if nb.cells else ''
